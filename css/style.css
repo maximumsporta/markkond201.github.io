@@ -1,0 +1,46 @@
+/*---start default style---*/
+body{
+color: #fff;
+font-family: 'Lato', sans-serif;
+font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+/*---end default style---*/
+/*---start header---*/
+.header{
+    background-color: #2d303a;
+    overflow: hidden; 
+    padding: 40px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.logo{
+    float: left;
+    margin-top: 5px;
+}
+.menu{
+    float: right;
+    padding-right: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li + li{
+    padding-left: 32px;
+}
+.menu a:hover{
+    color: #b35755;
+}
+ 
+/*---end header---*/
