@@ -91,6 +91,19 @@ margin: 4px 20px 2px 0px;
 border:0px solid #CCC;
 padding:10px;
 }
+.menu b {
+      text-decoration: none; /*убираем подчеркивание текста ссылок*/
+      background:#004242; /*добавляем фон к пункту меню*/
+      color:#fff; /*меняем цвет ссылок*/
+      padding:0px 15px; /*добавляем отступ*/
+      font-family: arial; /*меняем шрифт*/
+      line-height:50px; /*ровняем меню по вертикали*/
+      display: block; 
+      border-right: 1px solid #005B5B; /*добавляем бордюр справа*/
+      -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+      -o-transition: all 0.3s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease;
+    }
 
 </style>
 	<!-- Put this script tag to the <head> of your page -->
@@ -113,7 +126,7 @@ padding:10px;
         
         <div class="menu">	
         	<ul>
-        <li><a>MarkKond201</a></li>
+        <li><b>MarkKond201</b></li>
         <li><a href="#">Главная</a></li>
         <li><a href="#">Услуги</a>
             <ul>
