@@ -104,6 +104,28 @@ padding:10px;
       -o-transition: all 0.3s 0.01s ease;
       -webkit-transition: all 0.3s 0.01s ease;
     }
+.textt p {
+      text-decoration: none; /*убираем подчеркивание текста ссылок*/
+      background:#004242; /*добавляем фон к пункту меню*/
+      color:#FBFFFF; /*меняем цвет ссылок*/
+      padding:0px 15px; /*добавляем отступ*/
+      font-family: arial; /*меняем шрифт*/
+      line-height:50px; /*ровняем меню по вертикали*/
+      display: block; 
+      border-right: 1px solid #005B5B; /*добавляем бордюр справа*/
+      -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+      -o-transition: all 0.3s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease;
+    }
+    .textt a {
+	color:#FBFFFF
+}
+.textt a:active {
+	color:#FBFFFF
+}
+.textt a:visited {
+	color:#FBFFFF
+}
 
 </style>
 	<!-- Put this script tag to the <head> of your page -->
@@ -117,7 +139,7 @@ padding:10px;
 <div>
  <div>
 
-  <a href="markkond201.github.io">
+  <a href="http://markkond201.github.io">
    <img src="images/logo1.png"  width="75" height="60" class="leftfoto"/>
   </a>
  </div>
@@ -140,10 +162,11 @@ padding:10px;
     </ul>
 </div>
 <h1>Сайт на котором вы можете скачать нужный софт</h1>
+<div class="textt">
 <p><a href="unin.html" target="_blank">Скачать Uninstall Tool 3.5.2 (Repack By AllRepack)</a></p>
 <p><a href="bandicam.html" target="_blank">Скачать Bandicam 5.4.0 (Repack By AllRepack)</a></p>
 <p><a href="vs.html" target="_blank">Скачать Microsoft Visual C++ 2005-2008-2010-2012-2013-2019-2022 Redistributable Package Hybrid x86 & x64</a></p>
- 
+</div>
  
 </body>
 <div class="footer">
