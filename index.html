@@ -41,6 +41,56 @@ font:italic;
  margin: 65px 0 0 282px;
  z-index: 100;
 }
+	.menu     ul {
+      list-style: none; /*убираем маркеры списка*/
+      margin: 0; /*убираем отступы*/
+      padding-left: 0; /*убираем отступы*/
+      margin-top:25px; /*делаем отступ сверху*/
+      background:#004242; /*добавляем фон всему меню*/
+      height: 50px; /*задаем высоту*/
+    }
+    .menu a {
+      text-decoration: none; /*убираем подчеркивание текста ссылок*/
+      background:#004242; /*добавляем фон к пункту меню*/
+      color:#fff; /*меняем цвет ссылок*/
+      padding:0px 15px; /*добавляем отступ*/
+      font-family: arial; /*меняем шрифт*/
+      line-height:50px; /*ровняем меню по вертикали*/
+      display: block; 
+      border-right: 1px solid #005B5B; /*добавляем бордюр справа*/
+      -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+      -o-transition: all 0.3s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease;
+    }
+    .menu a:hover {
+      background:#005B5B;/*добавляем эффект при наведении*/
+    }
+    .menu li {
+      float:left; /*Размещаем список горизонтально для реализации меню*/
+      position:relative; /*задаем позицию для позиционирования*/
+    }
+         
+        /*Стили для скрытого выпадающего меню*/
+        .menu li > ul {
+            position:absolute;
+            top:25px;
+            display:none;   
+        }
+         
+        /*Делаем скрытую часть видимой*/
+        .menu li:hover > ul {
+            display:block; 
+            width:250px;  /*Задаем ширину выпадающего меню*/      
+        }
+       .menu li:hover > ul > li {
+            float:none; /*Убираем горизонтальное позиционирование*/
+        }
+.leftfoto{
+float:left;
+margin: 4px 20px 2px 0px;
+border:0px solid #CCC;
+padding:10px;
+}
 
 </style>
 	<!-- Put this script tag to the <head> of your page -->
@@ -53,10 +103,28 @@ font:italic;
 <body>
 <div>
  <div>
+
   <a href="markkond201.github.io">
-   <img src="images/logo1.png"  width="175" height="80"  />
+   <img src="images/logo1.png"  width="75" height="60" class="leftfoto"/>
   </a>
  </div>
+</div>
+
+        
+        <div class="menu">	
+        	<ul>
+        <li><a>MarkKond201</a></li>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a>
+            <ul>
+                <li><a href="#">Услуга 1</a></li>
+                <li><a href="#">Длинная услуга 2</a></li>
+                <li><a href="#">Услуга 3</a></li>
+            </ul>
+        </li>  
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
 </div>
 <h1>Сайт на котором вы можете скачать нужный софт</h1>
 <p><a href="unin.html" target="_blank">Скачать Uninstall Tool 3.5.2 (Repack By AllRepack)</a></p>
